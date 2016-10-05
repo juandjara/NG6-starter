@@ -3,7 +3,11 @@ import './app.scss';
 
 let appComponent = {
   template,
-  restrict: 'E'
+  controller: AppController
 };
+
+function AppController($mdMedia, $mdSidenav){
+
+}
 
 export default appComponent;

@@ -1,14 +1,7 @@
-<nav class="navbar">
-  <h2> {{$ctrl.name}} </h2>
-  <div>
-    <div class="logo">
-      <h1><a ui-sref="home">home</a></h1>
-    </div>
-    <div class="nav-links">
-      <span><a ui-sref="about">about</a></span>
-    </div>
-  </div>
-  <div style="font-size: 1.6em">
-    <button ng-click="$ctrl.sayHi()">Say hi</button>
-  </div>
-</nav>
+<div class="navbar menu-toggle-list" role="navigation">
+  <h2>Navbar</h2>
+  <a class="md-button md-ink-ripple"
+   href ui-sref="home" ui-sref-active="active">Home</a>
+  <a class="md-button md-ink-ripple"
+   href ui-sref="about" ui-sref-active="active">About</a>
+</div>

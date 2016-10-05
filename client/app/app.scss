@@ -1,6 +1,8 @@
 @import 'common/common';
 
-.app{
+app, .app{
   height: 100%;
-  background-color: $lightBgColor;
+}
+.angular-class-logo{
+  max-width: 100%;
 }

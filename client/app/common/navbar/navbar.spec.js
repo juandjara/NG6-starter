@@ -21,7 +21,7 @@ describe('Navbar', () => {
     // controller specs
     let controller;
     beforeEach(() => {
-      controller = $componentController('navbar', {
+      controller = $componentController('x-navbar', {
         $scope: $rootScope.$new()
       });
     });
@@ -37,12 +37,12 @@ describe('Navbar', () => {
 
     beforeEach(() => {
       scope = $rootScope.$new();
-      template = $compile('<navbar></navbar>')(scope);
+      template = $compile('<x-navbar></x-navbar>')(scope);
       scope.$apply();
     });
 
     it('has name in template', () => {
-      expect(template.find('h1').find('a').html()).to.eq('navbar');
+      expect(template.find('h2').html()).to.eq('Navbar');
     });
 
   });
