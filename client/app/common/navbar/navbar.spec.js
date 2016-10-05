@@ -21,13 +21,16 @@ describe('Navbar', () => {
     // controller specs
     let controller;
     beforeEach(() => {
-      controller = $componentController('x-navbar', {
+      controller = $componentController('navbar', {
         $scope: $rootScope.$new()
       });
     });
 
     it('has a name property', () => { // erase if removing this.name from the controller
       expect(controller).to.have.property('name');
+    });
+    it('has a $log property', () => {
+      expect(controller).to.have.property('$log');
     });
   });
 
@@ -37,12 +40,12 @@ describe('Navbar', () => {
 
     beforeEach(() => {
       scope = $rootScope.$new();
-      template = $compile('<x-navbar></x-navbar>')(scope);
+      template = $compile('<navbar></navbar>')(scope);
       scope.$apply();
     });
 
-    it('has name in template', () => {
-      expect(template.find('h2').html()).to.eq('Navbar');
+    it('has a ui-router link', () => {
+      expect(template.html()).to.contain('ui-sref');
     });
 
   });

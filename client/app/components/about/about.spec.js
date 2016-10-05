@@ -46,8 +46,8 @@ describe('About', () => {
       scope.$apply();
     });
 
-    it('has name in template', () => {
-      expect(template.find('h1').html()).to.eq('about');
+    it('has a template', () => {
+      expect(template.html()).to.be.ok;
     });
 
   });
