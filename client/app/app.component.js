@@ -1,4 +1,5 @@
 import template from './app.html';
+import AppController from './app.controller';
 import './app.scss';
 
 let appComponent = {
@@ -6,8 +7,5 @@ let appComponent = {
   controller: AppController
 };
 
-function AppController($mdMedia, $mdSidenav){
-
-}
 
 export default appComponent;
