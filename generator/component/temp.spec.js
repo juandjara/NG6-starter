@@ -20,17 +20,17 @@ describe('<%= upCaseName %>', () => {
 
   describe('Controller', () => {
     // controller specs
-    it('has a name property [REMOVE]', () => { // erase if removing this.name from the controller
+    it('is a class', () => {
       let controller = makeController();
-      expect(controller).to.have.property('name');
+      expect(controller).to.be.a('class');
     });
   });
 
   describe('Template', () => {
     // template specs
     // tip: use regex to ensure correct bindings are used e.g., {{  }}
-    it('has name in template [REMOVE]', () => {
-      expect(<%= upCaseName %>Template).to.match(/{{\s?\$ctrl\.name\s?}}/g);
+    it('has a template' () => {
+      expect(<%= upCaseName %>Template).to.be.ok;
     });
   });
 

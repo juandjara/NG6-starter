@@ -58,7 +58,7 @@
   "scripts": {
     "start": "gulp serve",
     "build": "gulp webpack",
-    "g": "gulp component",
+    "g": "gulp component --name ",
     "test": "karma start"
   },
   "keywords": [
