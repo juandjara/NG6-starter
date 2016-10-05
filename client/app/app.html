@@ -1,21 +1,13 @@
 <!-- Place all UI elements intended to be present across all routes in this file -->
 <div class="app" layout="column">
-  <md-toolbar class="top-nav">
-    <div class="md-toolbar-tools">
-      <h1 flex>This is NG6-Starter Template</h1>
-      <md-button hide-gt-md class="md-icon-button"
-        ng-click="$ctrl.toggleSidenav()">
-        <md-icon>menu</md-icon>
-      </md-button>
-    </div>
-  </md-toolbar>
+  <topnav></topnav>
   <main layout="row" layout-fill flex>
     <md-sidenav class="md-sidenav-left md-whiteframe-z2"
-      md-component-id="left" md-is-locked-open="$ctrl.$mdMedia('gt-md')">
-      <navbar></navbar>      
+      md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+      <navbar></navbar>
     </md-sidenav>
-    <md-content flex>  
-      <div layout="column" layout-padding layout-fill 
+    <md-content flex>
+      <div layout="column" layout-padding layout-fill
            ui-view>
       </div>
     </md-content>

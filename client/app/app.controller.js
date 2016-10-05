@@ -1,11 +1,7 @@
 class AppController {
-  constructor($mdSidenav, $mdMedia) {
+  constructor($mdMedia) {
     "ngInject";
     this.$mdMedia = $mdMedia;
-    this.$mdSidenav = $mdSidenav;
-  }
-  toggleSidenav(){
-    this.$mdSidenav("left").toggle();
   }
 }
 
