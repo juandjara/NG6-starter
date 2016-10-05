@@ -54,7 +54,7 @@
     "yargs": "^3.9.0"
   },
   "scripts": {
-    "start": "gulp server",
+    "start": "gulp serve",
     "build": "gulp webpack",
     "newcomponent": "gulp component",
     "test": "karma start"
